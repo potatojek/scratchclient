@@ -29,7 +29,7 @@ class CloudConnection(EventEmitter):
         self._cloudvariables = []
         self._timer = time.time()
         self._ws.connect(
-            "wss://clouddata.scratch.mit.edu",
+            "wss://clouddata.turbowarp.org/",
             cookie="scratchsessionsid=" + self._client.session_id + ";",
             origin="https://scratch.mit.edu",
             enable_multithread=True,
