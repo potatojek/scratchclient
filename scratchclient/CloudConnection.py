@@ -14,6 +14,7 @@ class CloudVariable:
 
 
 class CloudConnection(EventEmitter):
+    serverURL = "clouddata.scratch.mit.edu"
     def __init__(self, project_id, client):
         EventEmitter.__init__(self)
         self._client = client
@@ -29,7 +30,7 @@ class CloudConnection(EventEmitter):
         self._cloudvariables = []
         self._timer = time.time()
         self._ws.connect(
-            "wss://clouddata.turbowarp.org/",
+            serverURL,
             cookie="scratchsessionsid=" + self._client.session_id + ";",
             origin="https://scratch.mit.edu",
             enable_multithread=True,
