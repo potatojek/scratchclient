@@ -1,4 +1,4 @@
-Note: this version of scratchclient is for use with turbowarp cloud data. This will not work on scratches cloud servers.
+Note: this version of scratchclient is for use with turbowarp cloud data. This will not work on scratches cloud servers but all api calls will still work.
 
 # scratchclient
 A scratch API wrapper for python. 
